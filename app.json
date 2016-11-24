@@ -1,0 +1,24 @@
+{
+  "name": "fish",
+  "description": "The admin microservice of fish",
+  "website": "http://www.forestadmin.com/lumber",
+  "repository": "https://github.com/ForestAdmin/lumber",
+  "env": {
+    "FOREST_AUTH_KEY": {
+      "description": "A random JWT signing key to protect your admin API",
+      "value": "5e173bba92b64b1093376b9a7038a6cff5c00eda3729e95a4eda967c7a315beb3220a991b4ce87641664c5d2039749cc"
+    },
+    "FOREST_SECRET_KEY": {
+      "description": "The Forest secret key",
+      "value": "75f6d581a8eefeb31a5970e2887a2c49d434fa54fab52773682849b8853c5cb8"
+    },
+    "DATABASE_URL": {
+      "description": "The remote database connection URL",
+      "value": "postgres://<user>:<password>@<host>:<port>/<databaseName>"
+    },
+    "SSL_DATABASE": {
+      "description": "Specify if a SSL database connection is required.",
+      "value": "true"
+    }
+  }
+}
